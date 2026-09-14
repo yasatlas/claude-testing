@@ -1,0 +1,10 @@
+{
+  "name": "claude-testing",
+  "version": "1.0.0",
+  "description": "Utility functions with tests",
+  "main": "validateEmail.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
