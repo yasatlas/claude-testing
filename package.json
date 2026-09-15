@@ -1,0 +1,10 @@
+{
+  "name": "claude-testing",
+  "version": "1.0.0",
+  "description": "Sample utilities repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
