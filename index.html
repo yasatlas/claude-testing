@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+    body {
+      font-family: system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #f4f4f6;
+    }
+    h1 {
+      margin-bottom: 0.25rem;
+    }
+    #status {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      min-height: 1.5rem;
+    }
+    #board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 6px;
+      background: #333;
+      padding: 6px;
+      border-radius: 8px;
+    }
+    .cell {
+      background: #fff;
+      border: none;
+      font-size: 2.5rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .cell:disabled {
+      cursor: default;
+    }
+    .cell.win {
+      background: #b6f2b6;
+    }
+    #reset {
+      margin-top: 1.25rem;
+      padding: 0.5rem 1.25rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+      border: 1px solid #999;
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+  <div id="status"></div>
+  <div id="board"></div>
+  <button id="reset">Restart</button>
+
+  <script src="game.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
