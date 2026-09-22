@@ -1,0 +1,75 @@
+:root {
+  color-scheme: light dark;
+  --cell-size: 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, sans-serif;
+  background: #f4f4f9;
+}
+
+.app {
+  text-align: center;
+}
+
+.status {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  min-height: 1.5rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, var(--cell-size));
+  grid-template-rows: repeat(3, var(--cell-size));
+  gap: 6px;
+  background: #333;
+  padding: 6px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  background: #fff;
+  border: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell:disabled {
+  cursor: default;
+}
+
+.cell.win {
+  background: #d4f7d4;
+}
+
+.reset {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: #333;
+  color: #fff;
+}
+
+.reset:hover {
+  background: #555;
+}
