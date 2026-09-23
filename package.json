@@ -1,0 +1,12 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "A small command-line Tic-Tac-Toe game",
+  "main": "src/game.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
