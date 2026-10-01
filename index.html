@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Tic-Tac-Toe</h1>
+    <p id="status" class="status" aria-live="polite"></p>
+
+    <div id="board" class="board">
+      <button class="cell" data-index="0" aria-label="Row 1, column 1"></button>
+      <button class="cell" data-index="1" aria-label="Row 1, column 2"></button>
+      <button class="cell" data-index="2" aria-label="Row 1, column 3"></button>
+      <button class="cell" data-index="3" aria-label="Row 2, column 1"></button>
+      <button class="cell" data-index="4" aria-label="Row 2, column 2"></button>
+      <button class="cell" data-index="5" aria-label="Row 2, column 3"></button>
+      <button class="cell" data-index="6" aria-label="Row 3, column 1"></button>
+      <button class="cell" data-index="7" aria-label="Row 3, column 2"></button>
+      <button class="cell" data-index="8" aria-label="Row 3, column 3"></button>
+    </div>
+
+    <button id="reset-button" type="button">New Game</button>
+
+    <section class="scoreboard" aria-label="Scoreboard">
+      <div>
+        <span>You (X)</span>
+        <span id="score-x">0</span>
+      </div>
+      <div>
+        <span>Computer (O)</span>
+        <span id="score-o">0</span>
+      </div>
+      <div>
+        <span>Draws</span>
+        <span id="score-draw">0</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="src/js/constants.js"></script>
+  <script src="src/js/storage.js"></script>
+  <script src="src/js/Board.js"></script>
+  <script src="src/js/Player.js"></script>
+  <script src="src/js/AI.js"></script>
+  <script src="src/js/Game.js"></script>
+  <script src="src/js/Scoreboard.js"></script>
+  <script src="src/js/main.js"></script>
+</body>
+</html>
